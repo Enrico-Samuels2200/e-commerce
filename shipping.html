@@ -1,0 +1,87 @@
+<!--Task 15 
+    Capstone task 2 (part: 3/6)
+-->
+<!--Create at least 2 other pages (this could include pages such as “about us”, “meet  the team”, “shipping details”, etc)-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Online Store</title>
+    <link href="styles/myStyle.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!--At least 1 list.-->
+                <li><a href="sale.html">For sale</a></li>
+                <li><a href="shipping.html" class="active">Shipping</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="cart.html">To Cart</a></li>
+            </ul>
+            <!--At least one submit button form (possibly to simulate a login - don’t worry  about the functionality of this yet).-->
+            <form class="navLogin">
+                <input id="button" type="submit" value="Enter">
+                <input type="password" name="password" placeholder="Password">
+                <input type="text" name="username" placeholder="Username">
+            </form>
+        </nav>
+    </div>
+    <div class="shipTo">
+        <div class="new">
+            <div class="class1">
+                <div id="couponWindow">
+                    <button id="couponClose">X</button>
+                    <h1>Coupons for all</h1>
+                    <p>Get 25% of all products purchased<br />
+                        Hurry and claim <b>below</b> before someone<br />
+                        else does.
+                    </p>
+                    <button id="couponClaim" onclick="coupon()">Claim coupon</button>
+                </div>
+                <h1 class="heading">Shipping info:</h1>
+                <!--At least 3 font sizes.-->
+                <h2 class="subHead">Order Contact</h2>
+                <!--At least 3 font sizes.-->
+                <p>Contact Name:</p><input type="text" placeholder="e.g. John Doe">
+                <p>Phone Number:</p><input type="text" placeholder="e.g. 089 458 9592">
+                <p>Email address:</p><input type="email" placeholder="e.g unknown@gmail.com"><br /><br />
+                <button>Collect</button>
+                <button id="displayDelivery">Delivery</button>
+                <form>
+                    <div id="deliveryMenu">
+                        <h2 class="subHead">Shipping Address</h2>
+                        <p>Country/Region:</p><input type="text" placeholder="e.g. South Africa">
+                        <p>City:</p><input type="text" placeholder="e.g. Durban">
+                        <p>Street Address:</p><input type="text" placeholder="e.g. 32 North Street">
+                        <h3 class="subHead">Product info:</h3>
+                        <!--At least 3 font sizes.-->
+                        <p>Product ID:</p><input type="text" placeholder="e.g. #453">
+                        <p>Choose you method of delivery:</p>
+                        <select id="deliveryChoice">
+                        </select>
+                        <br /><br />
+                        <!--At least one radio button form (you could select different kinds of shipping  methods to your location).-->
+                    </div>
+                </form><br /><br />
+                <p>If you wish to use an external shipping company then click the button "Other" below:</p>
+                <!--At least 2 external links (maybe to a  shipping company, or an email address).-->
+                <a href="https://www.fedex.com/en-za/shipping.html?gclid=EAIaIQobChMIi42rxfjj4gIVU53VCh1yPgekEAAYAiAAEgLWEfD_BwE" class="external">Other</a>
+                <p>If you experience any problems please inform us on our email below:</p>
+                <!--At least 2 external links (maybe to a  shipping company, or an email address).-->
+                <a href="https://accounts.google.com/" class="external">Email</a><br /><br /><br />
+                <form>
+                    <button id="sendOrderBtn">Submit order</button>
+                    <button id="couponBtn"><a href="#couponWindow">Apply coupon</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/myCode.js"></script>
+</body>
+
+</html>

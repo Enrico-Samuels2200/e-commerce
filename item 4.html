@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Online Store</title>
+    <link type="text/css" rel="stylesheet" href="styles/myStyle.css">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!--At least 1 list-->
+                <li><a href="sale.html" class="active">For sale</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="cart.html">To Cart</a></li>
+            </ul>
+            <!--At least one submit button form (possibly to simulate a login - don’t worry  about the functionality of this yet)-->
+            <form class="navLogin">
+                <input id="button" type="submit" value="Enter">
+                <input type="password" name="password" placeholder="Password">
+                <input type="text" name="username" placeholder="Username">
+            </form>
+        </nav>
+    </div>
+    <div>
+        <div id="imgCon">
+            <img src="images/4.jpg" class="itemImg">
+        </div>
+        <div id="infoCon">
+            <h1>Raspberry pi powered desktop</h1>
+            <h2>Price: R1 230.00</h2>
+            <tr>
+                <td>Category:</td>
+                <td>Computer</td>
+            </tr><br />
+            <tr>
+                <td>Availbility:</td>
+                <td>In stock</td>
+            </tr>
+            <p>Specs:<br />
+                Internal Storage: 8GB<br />
+                Sensor 1/2.3-inch CMOS<br />
+                Effective Pixels: 12 million Lens<br />
+                Still Image Size 4000x3000<br />
+                Battery Capacity 3850 mAh<br />
+                Voltage 15.4 V Max<br />
+                Charging Voltage 17.6 V<br />
+                Battery Type LiPo 4S</p>
+            <hr>
+            <button class="cartBtn2" id="3" onclick="run()">Add to cart</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/myCode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,630 @@
+/*Task 15 
+  Capstone task 2 (part: 6/6)
+  #Code for task 15 begins at line 376.
+*/
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    background: url(3.jpg);
+    /*Background colours/images for all pages.*/
+    background-size: cover;
+}
+
+/*navBar*/
+.menu nav {
+    width: 100%;
+    background: #964000;
+    overflow: none;
+    position: fixed;
+    top: 0;
+}
+
+/*All lists must be customised.*/
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 60px;
+}
+
+.menu li {
+    /*Makes the list float right*/
+    float: left;
+}
+
+.menu a {
+    /*Customise the anchors belonging to thee class "menu".*/
+    background: #964000;
+    text-decoration: none;
+    width: 130px;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.menu nav a:hover {
+    background: black;
+    color: #fff;
+    opacity: 0.5;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.menu nav a.active {
+    background: black;
+}
+
+.navLogin {
+    padding: 12px;
+}
+
+.navLogin input {
+    border-radius: 5px 0px 0px 5px;
+    padding: 7px;
+    float: right;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#button {
+    /*Padding for all images and buttons.*/
+    border-radius: 0px 5px 5px 0px;
+    padding: 8.7px;
+    border: none;
+    background: orange;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    background: #964000;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+}
+
+.navbar nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 60px;
+}
+
+/*(Center all content, with the exception ofmultiple
+  row items being equally padded around the center)*/
+
+
+/*Home page*/
+/*(Styles homepages text.)*/
+.navbar {
+    width: 100%;
+    background: #964000;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+}
+
+.navbar nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 60px;
+}
+
+.button {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.btn {
+    /*Padding for all images and buttons.*/
+    text-decoration: none;
+    border: 1px solid #fff;
+    margin-right: 40px;
+    padding: 10px 30px;
+    color: gold;
+    font-size: 30px;
+    transition: 0.6s ease;
+}
+
+.btn:hover {
+    border: 3px solid;
+    color: #fff;
+    padding: 15px 35px;
+    opacity: 0.9;
+}
+
+.landH {
+    color: #FF4500;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 70px;
+    font-family: Century Gothic;
+}
+
+
+/*shopping page*/
+.headingShop {
+    width: 50%;
+    padding: 5px;
+    background: #FF4500;
+    text-align: center;
+    font-family: Verdana, serif;
+    font-style: italic;
+    font-size: 30px;
+    animation-name: shop;
+    /*Defines the animation name.*/
+    animation: shop 5s infinite;
+    /*Makes the animation continuously run*/
+}
+
+/*Animate background colours to change between different variants of colours.*/
+@keyframes shop {
+
+    /*Set the colors the animation should change to*/
+    0% {
+        background-color: #FFA500;
+    }
+
+    /*orange*/
+    25% {
+        background-color: #FF8C00;
+    }
+
+    /*darkorange*/
+    50% {
+        background-color: #FF4500;
+    }
+
+    /*orangered*/
+    75% {
+        background-color: #FF8C00;
+    }
+
+    /*darkorange*/
+    100% {
+        background-color: #FFA500;
+    }
+}
+
+.forSale {
+    /*Borders for all images and tables.*/
+    height: 200px;
+    width: 200px;
+    border: 1px solid orange;
+    filter: brightness(120%);
+}
+
+/*Customise the elements with the id "table".*/
+#table1 {
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin: auto;
+}
+
+#table1 td {
+    padding: 5px;
+    border: solid lightgrey;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.collapse {
+    border: 2px solid;
+    background: orange;
+    margin-right: 148px;
+}
+
+
+/*Shipping page*/
+.shipTo {
+    /*At least 2 floating boxes.*/
+    border: 3px solid #FF4500;
+    padding: 100px;
+    height: auto;
+}
+
+.heading {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: orangered;
+}
+
+.class1 {
+    border: 3px solid;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-right: 80px;
+    color: #fff;
+    padding-left: 60px;
+    margin-right: 50px;
+}
+
+.subHead {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.shipTable {
+    /*Borders for all images and tables. All 
+      tables must have customised formatting.*/
+
+    border: 1px solid darkblue;
+    width: 100%;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.shipTable th,
+/*Borders for all images and tables.*/
+td {
+    padding: 10px;
+    border: 1px solid darkblue;
+    text-align: center;
+    font-size: 20px;
+}
+
+#sendOrderBtn {
+    /*Padding for all images and buttons.*/
+    padding: 5px;
+    background: orange;
+    opacity: 0.7;
+    float: left;
+}
+
+#sendOrderBtn:hover {
+    font-size: 15px;
+    background: darkorange;
+    color: white;
+    opacity: 1;
+}
+
+.shipBtn {
+    /*Buttton that links to shipping company*/
+    /*Padding for all images and buttons.*/
+    padding: 5px;
+    border: 2px solid #606060;
+    background: #C8C8C8;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.shipLink {
+    /*Takes the link decorations away and makes the text black.*/
+    text-decoration: none;
+    color: black;
+}
+
+.shipBtn,
+.shipLink:hover {
+    /*When hovered over the text will change colour*/
+    background: #C8C8C8;
+    color: #fff;
+}
+
+.emailBtn {
+    /*Padding for all images and buttons.*/
+    padding: 5px;
+    border: 2px solid #606060;
+    background: #C8C8C8;
+    opacity: 0.7;
+}
+
+.emailBtn:hover {
+    background: #383838;
+    color: #fff;
+}
+
+
+/*About page*/
+.box1 {
+    width: 50%;
+    top: 49%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+}
+
+.companyInfo {
+    color: #FF4500;
+    font-family: sans-serif;
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+    padding: 30px;
+    border: 1px solid;
+}
+
+.companyGoal {
+    /*At least 2 floating boxes.*/
+    float: right;
+}
+
+.companyInfo img {
+    /*At least 2 floating boxes.*/
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+.companyGoal p {
+    /*At least 2 floating boxes.*/
+    border: 1px solid;
+    margin-right: 10%;
+}
+
+.ranPic {
+    border: 2px solid gold;
+    width: 290px;
+    height: 300px;
+    top: 90%;
+    right: 80%;
+}
+
+
+/*---------------------------------------------------NEW CODE--------------------------------------------------------*/
+ 
+.cartBtn {
+    border: none;
+    outline: none;
+    border-radius: 5px;     
+    background: #FF4500;
+ }
+
+ .cartBtn:hover {     
+    background: #FF4500;
+    font-size: 15px;
+    color: white;
+    transition: 0.5s ease;
+ }
+
+.cartBtn2 {
+    border: 2px solid gold;
+    outline: none;
+    border-radius: 6px;     
+    background: #FF4500;
+    font-size: 20px;
+    padding: 5px; 
+ }
+
+.cartBtn2:hover {
+    background: #F75B1D;
+    font-size: 19px;
+    transition: 0.9s ease;
+ }
+
+.itemImg {
+    height: 400px;
+    width: auto;
+    border: 6px solid gold;
+    background: #FF4500;
+    padding: 3px; 
+    border-radius: 5px;
+}
+
+.itemPng {
+    height: 400px;
+    width: auto;
+    border: 6px solid gold;
+    padding: 3px; 
+    border-radius: 5px;
+}
+
+#imgCon {
+    margin-top: 4vh;
+    float: left;
+    padding-left: 15vh;
+    display: none;
+}
+
+#infoCon {
+    margin-top: 4vh;
+    margin-right: 4vh; 
+    float: right;
+    border: 5px solid #964000;
+    border-radius: 5px; 
+    padding: 50px;
+    display: none;
+    color: #E84708; 
+}
+
+#infoCon p {
+    font-size: 20px;
+}
+
+#infoCon h1 {
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+.contain {
+    border: 3px solid #fff;
+    margin: 20px;
+}
+
+.inner {
+    margin: 5%;
+    background: rgb(230, 61, 0, 0.6);
+}
+
+.inner h1 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+.thumb img{
+    border: 2px solid gold;
+    border-radius: 3px;
+    height: 90px;
+    width: 90px;
+}
+
+.thumb {
+    display: flex;
+    flex-direction: row;
+    background: rgb(230, 61, 0, 0.7);
+}
+
+.thumb p{
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.addBtn {
+    margin-top: 35px;
+    border: 2px solid grey; 
+    height: 25.9px; 
+    margin-left: 50px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;   
+}
+
+.subBtn {
+    margin-top: 35px;
+    border: 2px solid grey;
+    height: 25.9px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.dPlay {
+    height: 20px;
+    border: 2px solid grey;
+    width: 50px;
+    margin-top: 35px;
+}
+
+.bButtons{
+    float: left;
+}
+
+#delB {
+    margin-top: 35px;
+    border: 2px solid red;
+    height: 25.9px;
+    background: rgb(77,0, 0, 0.1); 
+    margin-left: 50px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+#enter {
+    margin-bottom: 35px;
+    border: 2px solid gold;
+    background: rgb(230, 61, 0, 0.1);
+    height: 25.9px; 
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+}
+
+#readA {
+    height: 20px;
+    border: 2px solid grey;
+    background-color: rgb(230, 61, 0, 0.1);
+    width: 90px;
+    margin-top: 35px;
+    margin-right: 50px; 
+    float: right;
+}
+
+#total {
+    float: right;
+    margin-top: 37px;
+    margin-right: 20px;
+}
+
+#couponBtn {
+    float: left;
+    opacity: 0.7;
+    padding: 5px;
+    margin-left: 20px;
+    background: orange;
+    text-decoration: none;
+}
+
+#couponBtn a{
+    text-decoration: none;
+    color: black;
+}
+
+#couponBtn:hover a{
+    font-size: 15px;
+    background: darkorange;
+    color: white;
+    opacity: 1;
+}
+                                                    
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+#couponWindow {
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(0, 0, 0, 0.7); 
+}
+
+#couponClose {
+    float: right;
+    background: rgb(0,0,0, 0.1);
+    color: #fff;
+    border: none;
+    font-size: 50px;
+}
+
+#couponClose:hover {
+    font-size: 45px;
+}
+
+#couponWindow h1 {
+    font-size: 50px;
+}
+
+#couponWindow p {
+    font-size: 30px;
+}
+
+#couponWindow p, h1 {
+    padding: 50px;
+}
+
+#couponClaim {
+    color: #FF4500;
+    font-size: 30px;
+    border: 1px solid gold;
+    border-radius: 5px; 
+    background: rgb(0,0,0, 0.1);
+    margin-bottom: 50px;
+}
+
+#couponClaim:hover {
+    font-size: 29px;
+    color: white;
+    border: 1px solid #FF4500;
+}
+
+#deliveryMenu {
+    display: none;
+}
+

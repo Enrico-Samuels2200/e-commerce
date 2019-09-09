@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Online Store</title>
+    <link type="text/css" rel="stylesheet" href="styles/myStyle.css">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!--At least 1 list-->
+                <li><a href="sale.html" class="active">For sale</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="cart.html">To Cart</a></li>
+            </ul>
+            <!--At least one submit button form (possibly to simulate a login - don’t worry  about the functionality of this yet)-->
+            <form class="navLogin">
+                <input id="button" type="submit" value="Enter">
+                <input type="password" name="password" placeholder="Password">
+                <input type="text" name="username" placeholder="Username">
+            </form>
+        </nav>
+    </div>
+    <div>
+        <div id="imgCon">
+            <img src="images/6.png" class="itemPng">
+        </div>
+        <div id="infoCon">
+            <h1>Alienware M17x</h1>
+            <h2>Price: R23 499.00</h2>
+            <tr>
+                <td>Category:</td>
+                <td>Computer</td>
+            </tr><br />
+            <tr>
+                <td>Availbility:</td>
+                <td>In stock</td>
+            </tr>
+            <p>Specs:<br />
+                Alienware M17x<br /><br />
+                Processor: Intel Core i7-3610QM (Intel Core i7)Graphics adapter: <br />
+                AMD Radeon HD 7970M - 2048 MB, Core: 850 MHz Memory: 1200 MHz, GDDR5,<br />
+                8.934.2.0Memory8192 MB, 2x 4096 MB SO-DIMM DDR3-SDRAM PC3-12800<br />
+                (1600 MHz), 4 slots, max. 32 GB<br />
+                Display: 17.3 inch 16:9, 1920 x 1080 pixel,<br />
+                LGD02DA (D3WCF_173WF1), Full HD, WLED, glossy: yes<br />
+                Mainboard: Intel HM77 (Panther Point)<br />
+                Storage: Samsung SSD PM830 64 GByte mSATA, 64 GB, +<br />
+                Seagate Momentus 7200.4 (ST9500423AS), 500 GB, 7200 rpm</p>
+            <hr>
+            <button class="cartBtn2" id="5" onclick="run()">Add to cart</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/myCode.js"></script>
+</body>
+
+</html>

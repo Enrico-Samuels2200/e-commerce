@@ -1,0 +1,67 @@
+<!--Task 15 
+    Capstone task 2 (part: 2/6)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Online Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="styles/myStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!--At least 1 list-->
+                <li><a href="sale.html" class="active">For sale</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="cart.html">To Cart</a></li>
+            </ul>
+            <!--At least one submit button form (possibly to simulate a login - don’t worry  about the functionality of this yet)-->
+            <form class="navLogin">
+                <input id="button" type="submit" value="Enter">
+                <input type="password" name="password" placeholder="Password">
+                <input type="text" name="username" placeholder="Username">
+            </form>
+        </nav>
+    </div>
+    <h1 class="headingShop">The Online Store</h1>
+    <!--Your catalogue page should have at least 5 items for sale (include some details of the item).
+        Clicking on an item should allow the user to see more details about the item.
+        At least 5 images.-->
+    <div class="container" id="table1">
+        <div class="row">
+            <div class="col">
+                <!--At least 2 blocks (i.e text with a background).-->
+                <a href="item 1.html"><img src="images/1.jpg" alt="Raspberry pi zero w-dev-14277" class="forSale"></a><br />
+                <button class="cartBtn" id="0" onclick="run()">Add to cart</button><br /><br />
+                <a href="item 2.html"><img src="images/2.jpg" alt="raspberry-pi 3 model B" class="forSale"></a><br />
+                <button class="cartBtn" id="1" onclick="run()">Add to cart</button>
+            </div>
+            <div class="col">
+                <a href="item 3.html"><img src="images/3.jpg" alt="Mavic 2 Zoom Fly Pro" class="forSale"></a><br />
+                <button class="cartBtn" id="2" onclick="run()">Add to cart</button><br /><br />
+                <a href="item 4.html"><img src="images/4.jpg" alt="Raspberry pi powered desktop" class="forSale"></a><br />
+                <button class="cartBtn" id="3" onclick="run()">Add to cart</button>
+            </div>
+            <div class="col">
+                <a href="item 5.html"><img src="images/5.jpg" alt="Huawei P30 pro" class="forSale"></a><br />
+                <button class="cartBtn" id="4" onclick="run()">Add to cart</button><br /><br />
+                <br />
+                <a href="item 6.html"><img src="images/6.png" alt="Alienware M17x" class="forSale"></a><br />
+                <button class="cartBtn" id="5" onclick="run()">Add to cart</button><br />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/myCode.js"></script>
+</body>
+
+</html>
